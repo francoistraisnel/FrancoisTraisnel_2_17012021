@@ -76,12 +76,12 @@ p{
     border-top: 2px solid;
 
 }
-.logo{
+.logo-principal{
     width: 100px;
     height: 50px;
 }
 
-.logo img{
+.logo-principal img{
     height: auto;
     width: 100%;
 }
@@ -121,4 +121,35 @@ p{
     background-color: #0065fc;
     color: #fff;
     border-radius: 0px 10px 10px 0px;
+}
+
+#filtres{
+    max-height: 122px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30px;
+
+
+}
+
+.logo{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 16px 16px;
+    border-radius: 100% 100%;
+}
+
+.nom{
+    padding: 16px 22px 12px 13px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    border-color: #d9d9d9;
+    border-radius: 0px 25px 25px 0px;
+    margin-right: 25px;
+}
+
+.titre-filtres{
+    padding: 0px 33px 0px 10px;
 }
