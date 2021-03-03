@@ -44,17 +44,37 @@ p{
 
 .bouton1{
     font-weight: normal;
-    padding: 50px 22px 50px 22px;
+    padding: 48px 22px 50px 22px;
+    border-top: 2px solid;
+    border-color: #fff;
+}
+.bouton1:hover{
+    color: #0065FC;
+    font-weight: bolder;
+    border-top: 2px solid;
 }
 
 .bouton2{
-    padding: 50px 22px 50px 22px;
+    padding: 48px 22px 50px 22px;
+    border-top: 2px solid;
+    border-color: #fff;
+}
+.bouton2:hover{
+    color: #0065FC;
+    font-weight: bolder;
+    border-top: 2px solid;
 }
 
 .bouton3{
-    padding: 50px 22px 50px 22px;
+    padding: 48px 22px 50px 22px;
     color:  #0065FC;
     font-weight: bolder;
+    border-top: 2px solid;
+    border-color: #fff;
+}
+.bouton3:hover{
+    border-top: 2px solid;
+
 }
 .logo{
     width: 100px;
