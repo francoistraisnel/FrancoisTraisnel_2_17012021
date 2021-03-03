@@ -10,6 +10,24 @@ body{
     margin-right: 58px;
     
 }
+
+h2{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+h3{
+    font-size: 14px;
+    font-weight: bolder;    
+}
+
+h4{
+    font-size: 14px;
+    font-weight: bolder;
+}
+p{
+    font-size: 16px;
+}
 #header{
     display: flex;
     justify-content: space-between;
@@ -48,3 +66,39 @@ body{
     width: 100%;
 }
 
+#texte-présentation{
+    display: flex;
+    flex-direction: column;
+}
+
+.trouvez{
+    margin-bottom: 20px;
+}
+
+.nature{
+    margin-bottom: 20px;
+}
+
+#ville{
+    max-height: 51px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.map-marker{
+    padding: 17px 20px 17px 20px;
+    background-color: #f2f2f2;  
+    border-radius: 10px 0px 0px 10px;
+}
+
+.texte-marseille{
+    border: solid 1px #f2f2f2;
+    padding: 17px 71px 17px 17px;
+}
+
+.rechercher{
+    padding: 17px 18px;
+    background-color: #0065fc;
+    color: #fff;
+    border-radius: 0px 10px 10px 0px;
+}
