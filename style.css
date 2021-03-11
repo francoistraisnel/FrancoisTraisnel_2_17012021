@@ -12,12 +12,12 @@ body{
 }
 
 h2{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bolder;
 }
 
 h3{
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bolder;    
 }
 
@@ -28,7 +28,10 @@ h4{
 p{
     font-size: 16px;
 }
-#header{
+
+
+
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,7 +89,7 @@ p{
     width: 100%;
 }
 
-#texte-présentation{
+.texte-présentation{
     display: flex;
     flex-direction: column;
 }
@@ -99,7 +102,7 @@ p{
     margin-bottom: 20px;
 }
 
-#ville{
+.ville{
     max-height: 51px;
     display: flex;
     flex-direction: row;
@@ -123,7 +126,7 @@ p{
     border-radius: 0px 10px 10px 0px;
 }
 
-#filtres{
+.filtres{
     max-height: 122px;
     display: flex;
     flex-direction: row;
@@ -133,23 +136,106 @@ p{
 
 }
 
+.container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid;
+    border-left: none;
+    border-color: #d9d9d9;
+    border-radius: 25px;
+    margin-right: 25px;
+}
+
 .logo{
     color: #0065FC;
     background-color: #DEEBFF;
-    padding: 16px 16px;
-    border-radius: 100% 100%;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    
+    }
+
+.logo i{
+    display: flex;
+    font-size: 17px;
 }
 
 .nom{
-    padding: 16px 22px 12px 13px;
-    border-top: 2px solid;
-    border-bottom: 2px solid;
-    border-right: 2px solid;
-    border-color: #d9d9d9;
-    border-radius: 0px 25px 25px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13px;
     margin-right: 25px;
+
+}
+
+.nom h3{
+    align-items: center;
+    justify-content: center;
 }
 
 .titre-filtres{
     padding: 0px 33px 0px 10px;
 }
+
+.texte-intermédiaire{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px 0px; 
+}
+
+.logo-texte-intermédiaire{
+    padding: 0px 7px;
+}
+#hébergements{
+    padding: 47px 41px;
+    background-color: #f2f2f2;
+    border-radius: 16px;
+    max-width: 800px;
+    max-height: 430px;
+
+}
+#images-hébergements{
+    position: relative;
+    border: 5px solid;
+    border-color: #fff;
+    border-radius: 17px;
+    width: 246px;
+}
+
+.container-items{
+    display: flex;
+    flex-flow: row wrap;
+}
+#titre1{
+    margin-bottom: 27px;
+}
+.texte-img{
+    width: 246px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+
+.texte-img h3{
+    padding: 16px 12px;
+}
+.texte-img p{
+    margin-left: 12px;
+}
+.étoiles{
+    display: flex;
+    flex-direction: row;
+    padding: 11px 12px;
+}
+
+
+    
