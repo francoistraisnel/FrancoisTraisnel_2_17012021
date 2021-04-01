@@ -2,31 +2,34 @@
 {
     padding: 0;
     margin: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;  
 }
 
+html{
+    font-size: 100%;
+}
 body{
-    margin-left: 58px;
-    margin-right: 58px;
-    
+    margin: 0 auto;
+    width: 1335px;  
 }
 
 h2{
-    font-size: 16px;
+    font-size: 1em;
     font-weight: bolder;
 }
 
 h3{
-    font-size: 13px;
+    font-size: 0.95em;
     font-weight: bolder;    
 }
 
 h4{
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: bolder;
 }
+
 p{
-    font-size: 16px;
+    font-size: 0.8em;
 }
 
 
@@ -38,98 +41,118 @@ header{
 
 }
 
-.boutons{
+.header-boutons{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     
 }
 
-.bouton1{
+.header-boutons1-2{
+    display: flex;
+    flex-direction: row;
+}
+.header-bouton1{
     font-weight: normal;
     padding: 48px 22px 50px 22px;
     border-top: 2px solid;
     border-color: #fff;
 }
-.bouton1:hover{
+.header-bouton1:hover{
     color: #0065FC;
     font-weight: bolder;
     border-top: 2px solid;
 }
 
-.bouton2{
+.header-bouton2{
     padding: 48px 22px 50px 22px;
     border-top: 2px solid;
     border-color: #fff;
+    
 }
-.bouton2:hover{
+.header-bouton2:hover{
     color: #0065FC;
     font-weight: bolder;
     border-top: 2px solid;
 }
 
-.bouton3{
+.header-bouton3{
     padding: 48px 22px 50px 22px;
     color:  #0065FC;
     font-weight: bolder;
     border-top: 2px solid;
     border-color: #fff;
 }
-.bouton3:hover{
+.header-bouton3:hover{
     border-top: 2px solid;
 
 }
-.logo-principal{
+.header-logo{
     width: 100px;
     height: 50px;
 }
 
-.logo-principal img{
+.header-logo img{
     height: auto;
     width: 100%;
 }
+
 
 .texte-présentation{
     display: flex;
     flex-direction: column;
 }
 
-.trouvez{
+.texte-présentation h2{
     margin-bottom: 20px;
 }
 
-.nature{
+.texte-présentation p{
     margin-bottom: 20px;
 }
 
-.ville{
-    max-height: 51px;
+.champ-de-recherche{
+    max-height: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.map-marker{
-    padding: 17px 20px 17px 20px;
+.champ-de-recherche i{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #f2f2f2;  
     border-radius: 10px 0px 0px 10px;
 }
 
-.texte-marseille{
+.champ-de-recherche form{
+    height: 50px;
+    width: 234px;
+    display: flex;
+    align-items: center;
+    padding-left: 17px;
+    justify-content: flex-start;
     border: solid 1px #f2f2f2;
-    padding: 17px 71px 17px 17px;
+    box-sizing: border-box;
 }
 
-.rechercher{
-    padding: 17px 18px;
+.champ-de-recherche h4{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 17px 0px 18px;
     background-color: #0065fc;
     color: #fff;
     border-radius: 0px 10px 10px 0px;
 }
 
 .filtres{
-    max-height: 122px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     padding-top: 30px;
 
@@ -137,37 +160,46 @@ header{
 }
 
 .container{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    border: 2px solid;
-    border-left: none;
-    border-color: #d9d9d9;
-    border-radius: 25px;
+    height: 50px;
     margin-right: 25px;
+    
+    
 }
 
 .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #0065FC;
     background-color: #DEEBFF;
     height: 50px;
     width: 50px;
     border-radius: 100%;
+    position: absolute;
     
     }
 
 .logo i{
-    display: flex;
-    font-size: 17px;
+    font-size: 1em;
 }
 
 .nom{
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 13px;
-    margin-right: 25px;
+    padding-left: 63px;
+    padding-right: 22px;
+    border: 2px solid;
+    border-color: #d9d9d9;
+    border-radius: 25px;
+    box-sizing: border-box;
 
+}
+
+.nom:hover{
+    background-color: #DEEBFF;
+    border-color: #DEEBFF;
 }
 
 .nom h3{
@@ -189,31 +221,63 @@ header{
 .logo-texte-intermédiaire{
     padding: 0px 7px;
 }
-#hébergements{
-    padding: 47px 41px;
-    background-color: #f2f2f2;
-    border-radius: 16px;
-    max-width: 800px;
-    max-height: 430px;
 
+
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-#images-hébergements{
-    position: relative;
-    border: 5px solid;
-    border-color: #fff;
-    border-radius: 17px;
-    width: 246px;
+#hébergements{
+    width: 880px;
+    background-color: #f2f2f2;
+    padding: 47px 41px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    max-height: 627px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.titre-hébergements{
+    margin-bottom: 27px;
 }
 
 .container-items{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap row;
+    align-content: space-around;
+    justify-content: space-around;
+    width: 100%;
+    max-height: 80%;
+
 }
-#titre1{
-    margin-bottom: 27px;
-}
-.texte-img{
+
+.img img{
+    height: 200px;
     width: 246px;
+}
+
+
+.organisation{
+    max-width: 246px;
+    max-height: 200px;
+    box-sizing: border-box;
+    position: relative;
+    border: 5px white solid;
+    height: fit-content;
+    border-radius: 17px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px #d9d9d9;
+    margin-bottom: 30px;
+
+}
+
+.texte-img{
+
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -221,21 +285,156 @@ header{
     position: absolute;
     bottom: 0;
     left: 0;
+    padding:0px 11px;
+    height: 33%;
 
 }
 
 
 .texte-img h3{
-    padding: 16px 12px;
+    padding-top: 11px;
 }
-.texte-img p{
-    margin-left: 12px;
+.texte-img .étoiles{
+    padding-bottom: 3px;
 }
+.afficher-plus h3{
+    padding-top: 47px;
+}
+    
+.les-plus-populaires{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 27px;
+}
+
+#populaires{
+    background-color: #f2f2f2;
+    padding: 46px 38px;
+    border-radius: 16px;
+}
+
 .étoiles{
     display: flex;
     flex-direction: row;
-    padding: 11px 12px;
+    
+}
+
+.container-2{
+    position: relative;
+    justify-content: space-between;
+    align-content: space-around;
+    box-sizing: border-box;
+    border: 5px solid #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 134px;
+    margin-bottom: 27px;
+
+}
+
+.texte-img-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    top: 0; 
+    left: 37%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-left: 21px;
+}
+
+.img-2 img{
+    width: 343px;
+}
+
+#activités-à-marseille{
+    margin-bottom: 60px;
+
+}
+
+.titre-section-3{
+    padding-top: 50px;
+    padding-bottom: 17px;
+}
+
+.puzzle-global{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    max-height: 445px;
+    
 }
 
 
+.puzzle, .puzzle-2{
+    position: relative;
+    box-shadow: 5px 5px 5px #f2f2f2;
+}
+
+.puzzle-v2, .puzzle, .puzzle-2{
+    max-width: 302px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.texte-puzzle{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    align-content: center;
+    background-color: #fff;
+    width: 100%;
+    height: 55px;
+    padding-left: 27px;
+}
+
+.puzzle-v2{
+    align-content: space-between;
+    height: 232px;
+}
+
+
+.img-3 img{
+    width: 232px;
+}
+
+
+
+
+footer{
+    height: 217px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
     
+}
+
+.a-propos, .nos-hébergements, .assistance{
+    width: 33%;
+}
+
+.a-propos h3, .nos-hébergements h3, .assistance h3{
+    padding-bottom: 5%;
+}
+.a-propos p, .nos-hébergements p, .assistance p{
+    padding-bottom: 2%;
+}
+/*
+.tests img{
+    max-width: 246px;
+    border: 10px solid;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+.tests p{
+    position: absolute;
+    padding: 20px;
+    
+}
