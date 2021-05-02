@@ -40,7 +40,7 @@ a{
 }
 
 
-a:hover{
+header a:hover{
     color: #0065FC;
 }
 
@@ -108,7 +108,7 @@ header{
     flex-direction: row;
     align-items: center;
 }
-.champ-de-recherche i{
+.fa-map-marker-alt{
     width: 50px;
     height: 50px;
     display: flex;
@@ -132,10 +132,16 @@ header{
     font-weight: bolder;
     border: none;
     height: 100%;
+    width: 100%;
+    color: black;
+}
+
+.champ-de-recherche input:focus{
+    border-color: #fff;
 }
 
 .champ-de-recherche input :active{
-    border: none;
+    border-color: #fff;
 }
 
 .champ-de-recherche h4{
@@ -147,7 +153,17 @@ header{
     color: #fff;
     border-radius: 0px 10px 10px 0px;
 }
-
+.fa-search{
+    background-color: #0065FC;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    display: none;
+}
 .filtres{
     display: flex;
     flex-direction: row;
@@ -210,13 +226,13 @@ header{
     border-radius: 100%;
     box-sizing: border-box;
     border: 1px solid #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
 }
 .texte-intermediaire-logo i{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #0065FC;
     font-size: 0.8em;
 }
@@ -226,7 +242,7 @@ header{
 
 .principal{
     display: grid;
-    grid-template-columns: 880px 420px;
+    grid-template-columns: auto auto;
     grid-column-gap: 40px;
 
 }
@@ -305,7 +321,12 @@ header{
     display: flex;
     flex-direction: row;
 }
-
+.blue{
+    color:#0065fc;
+}
+.grey{
+    color:#d9d9d9;
+}
 .colonne{
     display: grid;
     grid-template-rows: auto;
@@ -332,6 +353,7 @@ header{
     top: 0; 
     left: 37%;
     height: 100%;
+    width: 190px;
     position: absolute;
     padding-left: 21px;
 }
@@ -366,6 +388,7 @@ header{
 }
 
 .puzzle{
+    max-height: 445px;
     position: relative;
     box-shadow: 0px 3px 25px 3px #d9d9d9;
     overflow: hidden;
@@ -388,7 +411,6 @@ header{
     padding-left: 19px;
     position: absolute;
     bottom: 0;
-    left: 0;
 }
 
 .pic-1, .pic-4{
