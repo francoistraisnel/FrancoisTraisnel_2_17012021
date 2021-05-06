@@ -39,6 +39,12 @@ a{
     font-weight: normal;
 }
 
+@media all and (max-width: 375px){
+    h2{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
 header a:hover{
     color: #0065FC;
 }
@@ -197,6 +203,13 @@ header{
     .logo-recherche{
         display: block;
     }
+    .champ-de-recherche, .texte-presentation p{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .texte-presentation h2{
+        padding-top: 40px;
+    }
 }
 .filtres{
     display: flex;
@@ -218,20 +231,6 @@ header{
     flex-flow: row wrap;
 }
 
-@media all and (max-width: 375px){
-    .filtres{
-        grid-row-gap: 20px
-    }
-    .titre-filtres{
-        padding-bottom: 20px;
-    }
-    .detail-filtres{
-        grid-row-gap: 13px
-    }
-    .container{
-        margin-right: 10px;
-    }
-}
 .logo{
     display: flex;
     align-items: center;
@@ -296,6 +295,29 @@ header{
     padding-left: 12px;
 }
 
+@media all and (max-width: 375px){
+    .filtres{
+        grid-row-gap: 20px
+    }
+    .titre-filtres{
+        padding-left: 5%;
+    }
+    .detail-filtres{
+        grid-row-gap: 13px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .container{
+        margin-right: 10px;
+    }
+    .div-texte-intermediaire{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+
+
 .principal{
     display: flex;
     grid-column-gap: 40px;
@@ -315,7 +337,7 @@ header{
 }
 
 .titre-hebergements{
-    padding: 50px 0px 27px 5%;
+    padding: 50px 5% 27px 5%;
 }
 
 .container-items{
@@ -376,13 +398,14 @@ header{
     padding-bottom: 3px;
 }
 .afficher-plus{
-    padding: 50px 0px 50px 5%;
+    padding: 50px 5%;
 }
     
 #populaires{
     background-color: #f2f2f2;
-    padding: 46px 38px;
     border-radius: 16px;
+    max-width: 480px;
+    justify-content: center;
 }
 
 .les-plus-populaires-titre{
@@ -420,7 +443,11 @@ header{
 
 @media all and (max-width: 375px){
     #populaires{
-        padding: 0px 0px;
+        padding: 10% 5%;
+        border-radius: 0px;
+    }
+    .les-plus-populaires-titre h2{
+
     }
 }
 
@@ -535,7 +562,10 @@ header{
     }
     .section-quatre h2{
         padding-top: 0px;
-    }    ]
+    }
+    .section-quatre h2{
+        padding-left: 5%;
+    }
 }
 footer{
     background-color: #f2f2f2;
@@ -545,15 +575,19 @@ footer{
     height: 100%;
     display: flex;
     flex-flow: row wrap;
-    padding: 50px 0px;
-    
-    
+    padding: 50px 0px;   
+}
+@media all and (max-width:375px){
+    .footer-container{
+        padding-left: 5%;
+    }
 }
 
 
 .footer-container div{
     width: 33.33%;
     min-width: 200px;
+    padding-bottom: 30px;
     
 }
 
@@ -561,5 +595,5 @@ footer h3{
     padding-bottom: 30px;
 }
 footer p{
-    padding-bottom: 24px;
+    padding-bottom: 22px;
 }
