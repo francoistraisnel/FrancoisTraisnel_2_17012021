@@ -115,6 +115,7 @@ header{
 .texte-presentation{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .texte-presentation h2, .texte-presentation p{
@@ -172,6 +173,8 @@ header{
     color: #fff;
     border-radius: 0px 10px 10px 0px;
 }
+
+
 .fa-search{
     background-color: #0065FC;
     color: #fff;
@@ -182,7 +185,18 @@ header{
     justify-content: center;
     border-radius: 10px;
     box-sizing: border-box;
+}
+.logo-recherche{
     display: none;
+}
+
+@media all and (max-width:375px){
+    .champ-de-recherche h4{
+        display: none;
+    }
+    .logo-recherche{
+        display: block;
+    }
 }
 .filtres{
     display: flex;
@@ -205,10 +219,17 @@ header{
 }
 
 @media all and (max-width: 375px){
+    .filtres{
+        grid-row-gap: 20px
+    }
     .titre-filtres{
         padding-bottom: 20px;
     }
     .detail-filtres{
+        grid-row-gap: 13px
+    }
+    .container{
+        margin-right: 10px;
     }
 }
 .logo{
@@ -249,7 +270,7 @@ header{
 }
 
 .div-texte-intermediaire{
-    height: 96px;
+    padding: 40px 0px;
     display: flex;
     flex-direction: row;
     align-items: center; 
@@ -278,6 +299,7 @@ header{
 .principal{
     display: flex;
     grid-column-gap: 40px;
+    justify-content: space-between;
 }
 @media all and (max-width: 375px){
     .principal{
@@ -288,18 +310,18 @@ header{
 }
 #hebergements{
     background-color: #f2f2f2;
-    padding: 47px 41px;
     border-radius: 16px;
-    
+    max-width: 880px;
 }
 
 .titre-hebergements{
-    margin-bottom: 27px;
+    padding: 50px 0px 27px 5%;
 }
 
 .container-items{
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
 
@@ -312,7 +334,6 @@ header{
     object-fit: cover;
 }
 
-
 .organisation{
     max-width: 246px;
     box-sizing: border-box;
@@ -324,6 +345,18 @@ header{
 
 }
 
+@media all and (max-width: 375px){
+    .organisation img{
+        width: 335px;
+    }
+    #hebergements{
+        padding: 0px 0px;
+        background-color: #fff;
+    }
+    .organisation{
+        max-width: none;
+    }
+}
 .texte-img{
     width: 100%;
     display: flex;
@@ -343,7 +376,7 @@ header{
     padding-bottom: 3px;
 }
 .afficher-plus{
-    padding-top: 47px;
+    padding: 50px 0px 50px 5%;
 }
     
 #populaires{
@@ -370,7 +403,7 @@ header{
 }
 .colonne{
     display: grid;
-    grid-template-rows: auto;
+    justify-content: space-around;
     grid-row-gap: 33px;
 }
 
@@ -487,37 +520,46 @@ header{
     max-width: 100%;
 }
 
-@media all and (max-width: 380px){
+@media all and (max-width: 375px){
     .container-section-quatre{
         justify-content: space-around;
+        grid-row-gap: 22px;
     }
-    .puzzle{
-
+    .puzzle img{
+        width: 335px;
+        height: 191px;
+        justify-content: space-around;
     }
-    #populaires{
-        
+    .disposition-1{
+        grid-row-gap: 22px
     }
+    .section-quatre h2{
+        padding-top: 0px;
+    }    ]
 }
 footer{
     background-color: #f2f2f2;
 }
 
 .footer-container{
-    max-height: 217px;
+    height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     padding: 50px 0px;
+    
     
 }
 
+
 .footer-container div{
     width: 33.33%;
+    min-width: 200px;
     
 }
 
 footer h3{
-    padding-bottom: 5%;
+    padding-bottom: 30px;
 }
 footer p{
-    padding-bottom: 2%;
+    padding-bottom: 24px;
 }
