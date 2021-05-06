@@ -101,11 +101,12 @@ header{
 @media all and (max-width: 375px){
     .header-bouton-1{
         position: absolute;
-        padding: 0px 0px;
+        padding: 0px 5%;
         top: 25px;
-        right: -49px;
+        right: 0px;
         height: auto;
-        text-align: right;
+        justify-content: flex-end;
+
         border: none;
     }
     .header-bouton-2{
@@ -115,6 +116,9 @@ header{
     }
     .header-bouton-2:hover{
         border-color: #0065fc;
+    }
+    .header-logo{
+        padding-left: 5%;
     }
 }
 
@@ -284,8 +288,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 .texte-intermediaire-logo i{
     color: #0065FC;
@@ -317,16 +319,15 @@ header{
 }
 
 
-
 .principal{
     display: flex;
+    flex-direction: row;
     grid-column-gap: 40px;
     justify-content: space-between;
 }
 @media all and (max-width: 375px){
     .principal{
         flex-wrap: wrap-reverse;
-        grid-row-gap: 50px;
     }
 
 }
@@ -404,14 +405,14 @@ header{
 #populaires{
     background-color: #f2f2f2;
     border-radius: 16px;
-    max-width: 480px;
+    max-width: 420px;
     justify-content: center;
 }
 
 .les-plus-populaires-titre{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 27px;
+    padding: 50px 5% 27px 5%;
 }
 
 .etoiles{
@@ -425,8 +426,9 @@ header{
     color:#d9d9d9;
 }
 .colonne{
-    display: grid;
-    justify-content: space-around;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     grid-row-gap: 33px;
 }
 
@@ -443,11 +445,12 @@ header{
 
 @media all and (max-width: 375px){
     #populaires{
-        padding: 10% 5%;
         border-radius: 0px;
+        padding-bottom: 37px;
+        justify-content: none;
     }
     .les-plus-populaires-titre h2{
-
+        padding-left: 0;
     }
 }
 
