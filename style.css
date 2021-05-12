@@ -39,7 +39,7 @@ a{
     font-weight: normal;
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     h2{
         padding-left: 5%;
         padding-right: 5%;
@@ -81,6 +81,9 @@ header{
     font-weight: bold;
     color: #0065FC
 }
+.header-bouton-2{
+    display: none;
+}
 
 .header-bouton-1, .header-bouton-2{
     background-color: #fff;
@@ -98,16 +101,14 @@ header{
     border-color: #0065FC
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
+    .boutons{
+        width:100%;
+        
+    }
     .header-bouton-1{
-        position: absolute;
-        padding: 0px 5%;
-        top: 25px;
-        right: 0px;
         height: auto;
-        justify-content: flex-end;
-
-        border: none;
+        padding: 20px 0px;
     }
     .header-bouton-2{
         padding: 20px 0px;
@@ -151,26 +152,24 @@ header{
 .champ-de-recherche form{
     height: 50px;
     width: 234px;
-    display: flex;
-    align-items: center;
-    padding-left: 17px;
-    border: solid 1px #f2f2f2;
-    box-sizing: border-box;
+    
 }
 .champ-de-recherche input{
     font-size: 0.95em;
     font-weight: bolder;
-    border: none;
     height: 100%;
     width: 100%;
     color: black;
+    padding-left: 17px;
+    border: solid 1px #f2f2f2;
+    box-sizing: border-box;
 }
 
-.champ-de-recherche input:focus{
-    border-color: #fff;
+input:focus{
+    outline: none;
 }
 
-.champ-de-recherche input :active{
+.champ-de-recherche input:active{
     border-color: #fff;
 }
 
@@ -195,12 +194,13 @@ header{
     justify-content: center;
     border-radius: 10px;
     box-sizing: border-box;
+    margin-left: -8px;
 }
 .logo-recherche{
     display: none;
 }
 
-@media all and (max-width:375px){
+@media all and (max-width:425px){
     .champ-de-recherche h4{
         display: none;
     }
@@ -297,7 +297,7 @@ header{
     padding-left: 12px;
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     .filtres{
         grid-row-gap: 20px
     }
@@ -325,7 +325,7 @@ header{
     grid-column-gap: 40px;
     justify-content: space-between;
 }
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     .principal{
         flex-wrap: wrap-reverse;
     }
@@ -353,12 +353,11 @@ header{
 
 .organisation img{
     height: 200px;
-    width: 246px;
+    width: 236px;
     object-fit: cover;
 }
 
 .organisation{
-    max-width: 246px;
     box-sizing: border-box;
     position: relative;
     border: 5px white solid;
@@ -368,7 +367,7 @@ header{
 
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     .organisation img{
         width: 335px;
     }
@@ -443,7 +442,7 @@ header{
     box-shadow: 0px 3px 25px 3px #d9d9d9;
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     #populaires{
         border-radius: 0px;
         padding-bottom: 37px;
@@ -550,7 +549,7 @@ header{
     max-width: 100%;
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 425px){
     .container-section-quatre{
         justify-content: space-around;
         grid-row-gap: 22px;
@@ -558,7 +557,7 @@ header{
     .puzzle img{
         width: 335px;
         height: 191px;
-        justify-content: space-around;
+        justify-content: center;
     }
     .disposition-1{
         grid-row-gap: 22px
@@ -580,7 +579,7 @@ footer{
     flex-flow: row wrap;
     padding: 50px 0px;   
 }
-@media all and (max-width:375px){
+@media all and (max-width:425px){
     .footer-container{
         padding-left: 5%;
     }
@@ -589,7 +588,7 @@ footer{
 
 .footer-container div{
     width: 33.33%;
-    min-width: 200px;
+    min-width: 210px;
     padding-bottom: 30px;
     
 }
