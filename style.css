@@ -69,24 +69,22 @@ header{
 }
 
 .boutons{
+    width: 42%;
     display: flex;
     flex-flow: wrap row-reverse;
+    justify-content: space-between;
 }
-
-.header-boutons{
-    display: flex;
-    flex-direction: row;
+.header-boutons li{
+    list-style: none;
+    display: inline-block;
 }
 .header-bouton-1{
+    width: 32%;
     font-weight: bold;
     color: #0065FC
 }
-.header-bouton-2{
-    display: none;
-}
-
 .header-bouton-1, .header-bouton-2{
-    width: 188px;
+    background-color: #d9d9d9;
     display: flex;
     align-items: center;
     justify-content: center;
