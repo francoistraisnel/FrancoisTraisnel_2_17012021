@@ -6,7 +6,7 @@
 }
 
 html{
-    font-size: 1em;
+    font-size: 1;
 }
 
 .ensemble{
@@ -100,7 +100,11 @@ header{
 .header-bouton-1:hover, .header-bouton-2:hover{
     border-color: #0065FC
 }
-
+@media all and (max-width: 768px){
+    .header-logo{
+        padding-left: 2%;
+    }
+}
 @media all and (max-width: 425px){
     .boutons{
         width:100%;
@@ -304,16 +308,23 @@ input:focus{
 .texte-intermediaire{
     padding-left: 12px;
 }
+@media all and (max-width: 768px){
+    #presentation{
+        padding: 0 2%;
+    }
+    .filtres{
+        grid-row-gap: 20px;
+    }
+    .detail-filtres{
+        grid-row-gap: 13px;
+    }
+}
 
 @media all and (max-width: 425px){
-    .filtres{
-        grid-row-gap: 20px
-    }
     .titre-filtres{
         padding-left: 5%;
     }
     .detail-filtres{
-        grid-row-gap: 13px;
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -330,15 +341,15 @@ input:focus{
 .principal{
     display: flex;
     flex-direction: row;
-    grid-column-gap: 40px;
     justify-content: space-between;
 }
-@media all and (max-width: 425px){
+@media all and (max-width: 768px){
     .principal{
         flex-wrap: wrap-reverse;
+        justify-content: center;
     }
-
 }
+
 #hebergements{
     background-color: #f2f2f2;
     border-radius: 16px;
@@ -353,8 +364,7 @@ input:focus{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    grid-gap: 30px;
 
 
 }
@@ -374,7 +384,14 @@ input:focus{
     box-shadow: 0px 3px 25px 3px #d9d9d9;
 
 }
-
+@media all and (max-width: 768px){
+    .organisation img{
+        width: 200px;
+    }
+    #hebergements{
+        border-radius: 0px;
+    }
+}
 @media all and (max-width: 425px){
     .organisation img{
         width: 335px;
@@ -454,7 +471,27 @@ input:focus{
     height: 145px;
     box-shadow: 0px 3px 25px 3px #d9d9d9;
 }
-
+@media all and (max-width: 768px){
+    #populaires{
+        max-width: 100%;
+        padding:0 2% 5% 2%;
+        margin-bottom: 5%;
+        border-radius: 0px;
+    }
+    .les-plus-populaires-titre{
+        justify-content: flex-start;
+    }
+    .les-plus-populaires-titre h2{
+        margin-right: 20px;
+    }
+    .colonne{
+        grid-column-gap: 20px;
+    }
+    .container-2{
+        max-width: 232px;
+        height: 125px;
+    }
+}
 @media all and (max-width: 425px){
     #populaires{
         max-width: 425px;
@@ -464,6 +501,12 @@ input:focus{
     }
     .les-plus-populaires-titre h2{
         padding-left: 0;
+    }
+    .container-2{
+        height: 145px;
+    }
+    .texte-img-2 h3{
+
     }
 }
 @media all and (max-width: 320px){
@@ -482,9 +525,9 @@ input:focus{
     top: 0; 
     left: 37%;
     height: 100%;
-    width: 190px;
+    width: 60%;
     position: absolute;
-    padding-left: 21px;
+    padding-left: 4%;
 }
 
 .img-2{
@@ -567,6 +610,15 @@ input:focus{
 .puzzle img{
     max-width: 100%;
 }
+@media all and (max-width: 768px){
+    .container-section-quatre{
+        justify-content: center;
+        grid-gap: 40px;
+    }
+    .section-quatre h2{
+        padding-left: 5%;
+    }
+}
 
 @media all and (max-width: 425px){
     .container-section-quatre{
@@ -603,6 +655,11 @@ footer{
     display: flex;
     flex-flow: row wrap;
     padding: 50px 0px;   
+}
+@media all and (max-width: 768px){
+    .footer-container{
+        padding: 50px 2%;
+    }
 }
 @media all and (max-width:425px){
     .footer-container{
