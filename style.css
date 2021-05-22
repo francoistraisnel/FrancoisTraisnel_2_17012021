@@ -55,7 +55,6 @@ header{
     align-items: center;
     flex-wrap: wrap;
     height: 132px;
-    position: relative;
 }
 
 .header-logo{
@@ -72,19 +71,23 @@ header{
     width: 42%;
     display: flex;
     flex-flow: wrap row-reverse;
-    justify-content: space-between;
+}
+.header-boutons{
+    width: 68%;
 }
 .header-boutons li{
+    width: 49%;
     list-style: none;
     display: inline-block;
 }
+
 .header-bouton-1{
     width: 32%;
     font-weight: bold;
     color: #0065FC
 }
 .header-bouton-1, .header-bouton-2{
-    background-color: #d9d9d9;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,9 +104,17 @@ header{
 @media all and (max-width: 425px){
     .boutons{
         width:100%;
-        
+    }
+    .header-boutons{
+        width: 100%;
+    }
+    .header-boutons li{
+        width: 49%;
     }
     .header-bouton-1{
+        position: absolute;
+        top: 2%;
+        right: 0;
         height: auto;
         padding: 20px 0px;
     }
@@ -261,6 +272,7 @@ input:focus{
 }
 
 .nom:hover{
+    background-color: #DEEBFF;
     border-color: #DEEBFF;
 }
 
@@ -375,6 +387,11 @@ input:focus{
         max-width: none;
     }
 }
+@media all and (max-width: 320px){
+    .organisation img{
+        width: 285px;
+    }
+}
 .texte-img{
     width: 100%;
     display: flex;
@@ -440,12 +457,18 @@ input:focus{
 
 @media all and (max-width: 425px){
     #populaires{
+        max-width: 425px;
         border-radius: 0px;
         padding-bottom: 37px;
         justify-content: normal;
     }
     .les-plus-populaires-titre h2{
         padding-left: 0;
+    }
+}
+@media all and (max-width: 320px){
+    .container-2{
+        width: 285px;
     }
 }
 
@@ -565,6 +588,12 @@ input:focus{
         padding-left: 5%;
     }
 }
+@media all and (max-width: 320px){
+    .puzzle img{
+        width: 285px;
+    }
+}
+
 footer{
     background-color: #f2f2f2;
 }
