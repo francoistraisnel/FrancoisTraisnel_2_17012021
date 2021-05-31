@@ -94,7 +94,7 @@ header a:hover{
 }
 @media all and (max-width: 768px){
     .header-logo{
-        padding-left: 3.5%;
+        padding-left: 5%;
     }
 }
 @media all and (max-width: 425px){
@@ -266,7 +266,7 @@ input:focus{
 }
 @media all and (max-width: 768px){
     #presentation{
-        padding: 0 3.5%;
+        padding: 0 5%;
     }
 }
 @media all and (max-width: 425px){
@@ -298,7 +298,7 @@ input:focus{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    padding: 0 3.5% 0 3.5%;
+    padding: 0 5% 0 5%;
     gap: 30px;
 }
 .organisation img{
@@ -307,7 +307,7 @@ input:focus{
     object-fit: cover;
 }
 .organisation{
-    max-width: 246px;
+    max-width: 242px;
     box-sizing: border-box;
     position: relative;
     border: 5px white solid;
@@ -316,12 +316,18 @@ input:focus{
     box-shadow: 0px 3px 25px 3px #d9d9d9;
 }
 @media all and (max-width: 768px){
+    .organisation{
+        width: 30%;
+    }
     .organisation img{
-        width: 200px;
+        width: 100%;
     }
     #hebergements{
         width: 100%;
         border-radius: 0px;
+    }
+    .container-items{
+        justify-content: space-between;
     }
 }
 @media all and (max-width: 425px){
@@ -336,20 +342,11 @@ input:focus{
         background-color: #fff;
     }
     .organisation{
+        width: 100%;
         max-width: none;
     }
 }
-@media all and (max-width: 320px){
-    .organisation img{
-        width: 285px;
-    }
-    .titre-hebergements{
-        padding: 50px 3.5% 27px 3.5%;
-    }
-    .container-items{
-        padding: 0 3.5% 0 3.5%;
-    }
-}
+
 .texte-img{
     width: 100%;
     display: flex;
@@ -524,11 +521,11 @@ input:focus{
     .puzzle img{
         width: 336px;
     }
-    .container-puzzle-titre{
-        padding-left: 3.5%;
-    }
 }
 @media all and (max-width: 425px){
+    .container-puzzle-titre{
+        padding-top: 0;
+    }
     .section-puzzle{
         padding: 0 5% 0 5%; 
     }
@@ -540,14 +537,10 @@ input:focus{
     .disposition-1{
         gap: 22px
     }
-    .container-puzzle-titre{
-        padding-top: 0px;
-        padding-left: 5%;
-    }
 }
 @media all and (max-width: 320px){
     .section-puzzle{
-        padding: 0 3.5% 0 3.5%; 
+        padding: 0 5% 0 5%; 
     }
     .puzzle img{
         width: 285px;
@@ -565,7 +558,7 @@ footer{
 }
 @media all and (max-width: 768px){
     .footer-container{
-        padding: 50px 3.5%;
+        padding: 50px 5%;
     }
 }
 @media all and (max-width:425px){
